@@ -1,0 +1,7 @@
+void main() {
+  List<String> friends = ["Bob", "Alice", "Tom", "Anna", "Jack", "Amy", "Alex"];
+
+  String friendWithA = friends.where((friend) => friend.startsWith("A")).first;
+
+  print("Bạn bè bắt đầu bằng chữ cái 'A' là: $friendWithA");
+}

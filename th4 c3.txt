@@ -1,0 +1,20 @@
+import 'dart:io';
+
+void main() {
+  List<double> expenses = [];
+
+  while (true) {
+    stdout.write("Nhập số tiền chi tiêu (nhập 'done' để kết thúc): ");
+    String input = stdin.readLineSync()!;
+    if (input == "done") {
+      break;
+    } else {
+      double expense = double.tryParse(input) ?? 0.0;
+      expenses.add(expense);
+    }
+  }
+
+  double total = expenses.reduce((value, element) => value + element);
+
+  print("Tổng số tiền chi tiêu là: \$$total");
+}

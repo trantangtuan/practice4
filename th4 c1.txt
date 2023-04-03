@@ -1,0 +1,7 @@
+void main() {
+  List<String> names = ["Tuan", "Nam", "Minh", "Linh", "Kien"];
+  
+  for (var name in names) {
+    print(name);
+  }
+}
